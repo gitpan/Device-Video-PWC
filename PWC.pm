@@ -3,7 +3,7 @@ package Device::Video::PWC;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.11';
 
 use XSLoader;
 XSLoader::load('Device::Video::PWC', $VERSION);
@@ -90,7 +90,7 @@ Device::Video::PWC
 =head1 DESCRIPTION
 
 This module is an adaptation of source code of C<setpwm> program. With 
-this tool, you can only set settings specific to the Philips WebCams.
+this tool, you can set settings specific to the Philips WebCams.
 
 =head1 SUBROUTINES/METHODS
 
@@ -98,7 +98,7 @@ this tool, you can only set settings specific to the Philips WebCams.
 
 =item B<new( '/path/to/video/device' )>
 
-Constructor. The parameter is a path to video devices. Default value is
+Constructor. The parameter is a path to a video device. Default value is
 set to C</dev/video0>.
 
 =item B<set_device( '/path/to/video/device' )>
@@ -227,7 +227,7 @@ None. I hope.
 =over 4
 
 =item Thanks to Folkert van Heusden <folkert@vanheusden.com>, who is an
-author of original source code for C<setpwc>.
+author of original source code of C<setpwc>.
 
 =back
 
